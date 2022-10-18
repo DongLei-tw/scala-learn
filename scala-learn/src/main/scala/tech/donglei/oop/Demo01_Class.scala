@@ -1,7 +1,7 @@
 package tech.donglei.oop
 
 
-object Demo01 {
+object Demo01_Class {
 
   def main(args: Array[String]): Unit = {
 
