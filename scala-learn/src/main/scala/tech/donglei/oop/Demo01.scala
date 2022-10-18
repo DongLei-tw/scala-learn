@@ -15,6 +15,12 @@ object Demo01 {
 
     class Customer(val name: String, val age: Int) {
       println("constructor is called!")
+
+      // define Auxiliary constructor
+      def this(attr: (String, Int)) {
+        // calling the primary constructor
+        this(attr._1, attr._2)
+      }
     }
 
     val person = new Person
