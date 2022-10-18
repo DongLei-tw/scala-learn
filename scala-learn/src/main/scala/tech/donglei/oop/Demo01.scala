@@ -13,6 +13,10 @@ object Demo01 {
       def printHello(msg: String) = println(msg)
     }
 
+    class Customer(val name: String, val age: Int) {
+      println("constructor is called!")
+    }
+
     val person = new Person
 
     person.name = "Sam"
@@ -21,5 +25,10 @@ object Demo01 {
     println(person.name, person.age)
 
     person.printHello("Hello world!")
+
+    val c1 = new Customer("Sam", 20)
+    val c2 = new Customer("Bob", 30)
+    println(s"c1 name: ${c1.name}, age: ${c1.age}")
+    println(s"c2 name: ${c2.name}, age: ${c2.age}")
   }
 }
