@@ -9,6 +9,8 @@ object Demo01 {
       // Init fields uses _
       var name:String = _
       var age: Int = _
+
+      def printHello(msg: String) = println(msg)
     }
 
     val person = new Person
@@ -17,5 +19,7 @@ object Demo01 {
     person.age = 18
 
     println(person.name, person.age)
+
+    person.printHello("Hello world!")
   }
 }
