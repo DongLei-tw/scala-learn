@@ -1,6 +1,6 @@
 package tech.donglei.oop
 
-class Demo05_apply {
+object Demo05_apply {
 
   class Person(var name: String = "", var age:Int = 0) {}
 
