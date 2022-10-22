@@ -1,6 +1,6 @@
 package tech.donglei.traitdemo
 
-object Demo04_AdaptorPattern {
+object Demo05_AdaptorPattern {
 
   /*
   * When trait declares multiple methods, but we only need one or some of them

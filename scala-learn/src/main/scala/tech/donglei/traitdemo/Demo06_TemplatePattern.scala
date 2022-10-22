@@ -1,6 +1,6 @@
 package tech.donglei.traitdemo
 
-object Demo05_TemplatePattern {
+object Demo06_TemplatePattern {
 
   // The process is known but the details of steps are different/unknown
   // Common part is define in parent class, different details will be implemented in derived classes
