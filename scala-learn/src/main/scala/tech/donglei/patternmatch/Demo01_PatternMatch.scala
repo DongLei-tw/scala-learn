@@ -10,6 +10,11 @@ object Demo01_PatternMatch {
       println(r)
     })
 
+    println("========")
+
+    val inputs = Vector(1, 2, 3, 5, 8, 13)
+
+    inputs.foreach(matchGuards)
   }
 
   def simpleMatch(data: Any): String = {
@@ -20,5 +25,14 @@ object Demo01_PatternMatch {
       case _ => "No match"
     }
     result1
+  }
+
+  def matchGuards(input: Int): Unit = {
+    input match {
+      // pattern match guards: if condition
+      case x if x >= 0 && x <= 3 => println("in range [0-3]")
+      case x if x >= 4 && x <= 8 => println("in range [4-8]")
+      case _ => println("Out of range")
+    }
   }
 }
